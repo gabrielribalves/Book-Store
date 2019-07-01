@@ -1,3 +1,53 @@
-body{
+/* Google Font */
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet&display=swap');
 
+*{
+  box-sizing:border-box;
+}
+
+header, section{
+  overflow-x: hidden;
+}
+
+:root{
+  --Snigle-font:"Sniglet",cursive;
+  --Rubik:"Rubik",cursive;
+  --Patua:"Patua One",cursive;
+  --Lobster:"Lobster",cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(
+    to bottom,
+    #dd2476, #ff512f);
+  --light-gray: rgba(255,255,255,0.877);
+}
+
+header{
+  background: #dd2476;
+  background: var(--bggradient);
+}
+
+header a{
+  font-family: var(--Snigle-font);
+  font-size: 0.9em;
+  color: whitesmoke;
+}
+
+.dropdown-content{
+  display:none;
+  position: absolute;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a{
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover{
+  background: #ddd;
 }
